@@ -221,6 +221,8 @@ public Product getProduct() {
 ```
 Всё хорошо, но тут есть подводные камни при реальном использовании. Подробнее см. ["DON’T GET TRAPPED INTO A MEMORY LEAK USING CDI INSTANCE INJECTION"](https://blog.akquinet.de/2017/01/04/dont-get-trapped-into-a-memory-leak-using-cdi-instance-injection/).
 
+Так же важным разделом спецификации является раздел ["2.6.2. Default bean names"](http://docs.jboss.org/cdi/spec/2.0/cdi-spec.html#default_name) про именование CDI бинов.
+
 ## [↑](#Home) <a name="Qualifier"></a> Квалификатор
 Добавим новую реализацию:
 ```java
