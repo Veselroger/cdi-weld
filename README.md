@@ -475,3 +475,4 @@ CDI Managed Beans являются contextual, то есть их жизненн
 - Обзор ["Weld + JUnit = Easy Testing of CDI Beans"](https://dzone.com/articles/weld-junit-easy-testing-of-cdi-beans)
 - JTA и CDI: [3.7 Transactional Annotation](http://download.oracle.com/otn-pub/jcp/jta-1_2-mrel2-eval-spec/JTA1.2Specification.pdf)
 - Литрес: ["Изучаем Java EE 7"](https://www.litres.ru/entoni-gonsalves/izuchaem-java-ee-7-2)
+- LinkedIn Learning: ["Java EE: Contexts and Dependency Injection"](https://www.linkedin.com/learning/java-ee-contexts-and-dependency-injection)
