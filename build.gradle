@@ -1,0 +1,36 @@
+// Apply the java plugin to add support for Java
+apply plugin: 'java'
+
+// Apply the application plugin to add support for building an application
+apply plugin: 'application'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // This dependency is found on compile classpath of this component and consumers.
+    compile 'com.google.guava:guava:21.0'
+    // JEE specifications
+    compile 'javax:javaee-api:8.0'
+    // CDI implementation
+    compile 'org.jboss.weld.se:weld-se-core:3.0.4.Final'
+    // Use JUnit test framework
+    testCompile 'junit:junit:4.12'
+}
+
+// Define the main class for the application
+mainClassName = 'App'
+
+test {
+    testLogging {
+        events "standardOut", "passed", "skipped", "failed"
+    }
+}
+
+task copyBeansFileTask(type: Copy) {
+    from "${projectDir}/src/main/resources"
+    into "${buildDir}/classes/main"
+}
+test.dependsOn copyBeansFileTask
